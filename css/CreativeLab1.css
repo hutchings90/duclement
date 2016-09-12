@@ -1,0 +1,40 @@
+body{
+	margin: 0px;
+}
+
+#playing-area{
+	height: 475px;
+}
+
+#fly-zone{
+	height: 440px;
+	background-color: #76E0FF;
+}
+
+#ground{
+	height: 35px;
+	background-color: #00aa00;
+}
+
+#scoreboard{
+	margin: 5px;
+	width: 100px;
+	display: inline-block;
+}
+
+#scoreboard div div{
+	display: inline-block;
+}
+
+#timer{
+	font-size: 40px;
+}
+
+.dynamic{
+	position: absolute;
+	visibility: hidden;
+}
+
+.full-width{
+	width: 100%;
+}

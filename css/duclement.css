@@ -1,0 +1,17 @@
+body{
+	background-color: lightblue;
+    text-align: center;
+}
+
+#title {
+	color: blue;
+	font-size: 40px;
+}
+
+button{
+	font-size: 30px;
+}
+
+img{
+	width: 200px;
+}

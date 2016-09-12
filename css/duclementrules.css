@@ -1,0 +1,19 @@
+body {
+	background-color: lightblue;
+	font-weight: bold;
+	font-size: 19px;
+}
+
+h1{
+	color: red;	
+	text-align: center;
+}
+
+#instructions div {
+	margin-left: 40px;
+}
+
+.horizontal-center{
+    width: 50%;
+    transform: translate(50%);
+}

@@ -1,0 +1,28 @@
+OBJECTIVE
+	Destroy planes
+
+SCORING
+	Hit plane == +1.
+	Hit duck == -2.
+	Miss == -1.
+	Hit plane typing plane's number (onkeyup).
+
+	if(number == plane.number){
+		score++;
+		destroy(plane);
+		create(plane);		// 750 ms later
+	}
+	else if(duclementCount > 0){
+		score -= 2;
+		if(score < 0) score = 0;
+		destroy(duck);
+		create(duck);		// 750 ms later
+	}
+	else{
+		if(score > 0) score--;
+		misses++;
+	}
+
+FAQ
+	Q: What happens when a plane goes off the screen?
+	A: It is placed at the left edge of the screen. Its speed and y-position may change. Its number stays the same.

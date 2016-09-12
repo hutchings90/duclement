@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>Duclement Rules</title>
+	<link href="css/duclementrules.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<h1> Duclement Rules</h1>
+	<div class="horizontal-center" id="instructions">
+        OBJECTIVE
+        <div>Destroy planes</div>
+        <br>
+        SCORING
+        <div>Hit plane == +1.</div>
+        <div>Hit duck == -2.</div>
+        <div>Miss == -1.</div>
+        <div>Hit plane typing plane's number (onkeyup).</div>
+        <br>
+        <div>if(number == plane.number){</div>
+        <div><div>score++;</div></div>
+        <div><div>destroy(plane);</div></div>
+        <div><div>create(plane); // 750 ms later</div></div>
+        <div>}</div>
+        <div>else if(duclementCount > 0){</div>
+        <div><div>score -= 2;</div></div>
+        <div><div>if(score < 0) score = 0;</div></div>
+        <div><div>destroy(duck);</div></div>
+        <div><div>create(duck);// 750 ms later</div></div>
+        <div>}</div>
+        <div>else{</div>
+        <div><div>if(score > 0) score--;</div></div>
+        <div><div>misses++;</div></div>
+        <div>}</div>
+    </div>
+    <br>
+    <div class="horizontal-center" id="faq">
+        FAQ
+        <div>Q: What happens when a plane goes off the screen?</div>
+        <div>A: It is placed at the left edge of the screen. Its speed and y-position may change. Its number stays the same.</div>
+    </div>
+</body>
+</html>
